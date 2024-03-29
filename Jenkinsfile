@@ -88,7 +88,7 @@ pipeline {
         success {
             script {
                 if (params.BRANCH == 'qa') {
-                    build job: 'ecs-far', parameters: [string(name: 'BRANCH', value: 'main')]
+                    build job: 'ecs-far-champ', parameters: [string(name: 'BRANCH', value: 'main')]
                 }
             }
         }
