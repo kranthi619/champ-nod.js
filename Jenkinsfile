@@ -1,8 +1,6 @@
 pipeline {
     agent any
-    parameters {
-        gitParameter branchFilter: 'origin/(.*)', name: 'kranthi', type: 'PT_BRANCH'
-    }
+    
     environment {
         ECR_REPOSITORY_NAME = 'kranthi-repo'
         ECR_REPOSITORY = '996034040698.dkr.ecr.ap-south-1.amazonaws.com/kranthi-repo'
@@ -80,15 +78,6 @@ pipeline {
                                      -t $ECS_TIMEOUT \
                                      --use-latest-task-def
                     '''
-                }
-            }
-        }
-    }
-    post {
-        success {
-            script {
-                if (params.BRANCH == 'qa') {
-                    build job: 'ecs-far-champ', parameters: [string(name: 'kranthi', value: 'main')]
                 }
             }
         }
