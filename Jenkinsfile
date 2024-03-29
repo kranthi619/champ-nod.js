@@ -82,4 +82,7 @@ pipeline {
             }
         }
     }
+    triggers {
+        upstream(upstreamProjects: 'EBS-POC', threshold: hudson.model.Result.SUCCESS)
+    }
 }
