@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Welcome to My Website</title>
+      <title>HELLO TEAM</title>
       <style>
         body {
           font-family: Arial, sans-serif;
@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
         }
         h1 {
           color: #333;
-          font-size: 3.5em; /* Increase font size for h1 */
+          font-size: 3em;
           text-shadow: 2px 2px 4px #000000;
         }
         p {
@@ -43,8 +43,8 @@ app.get("/", (req, res) => {
     </head>
     <body>
       <h1>Welcome to My Website</h1>
-      <p class="animated-text">Hello, this is <strong><span style="font-weight: bold; font-size: 1.7em;">Kranthi_Champ</span></strong>!</p>
-      <p>Lets learn together team ALL THE VERY BEST TEAM <img src="https://emojicdn.elk.sh/🤝" alt="handshake" style="width: 30px; vertical-align: middle;"> and make my name kranthi_champ bolder and a little larger than now.</p>
+      <p class="animated-text">this is <strong>Kranthi_Champ</strong>!</p>
+      <p>All the very best team</p>
     </body>
     </html>
   `);
