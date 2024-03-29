@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        gitParameter branchFilter: 'origin/(.*)', name: 'BRANCH', type: 'PT_BRANCH'
+        gitParameter branchFilter: 'origin/(.*)', name: 'kranthi', type: 'PT_BRANCH'
     }
     environment {
         ECR_REPOSITORY_NAME = 'kranthi-repo'
@@ -88,7 +88,7 @@ pipeline {
         success {
             script {
                 if (params.BRANCH == 'qa') {
-                    build job: 'ecs-far-champ', parameters: [string(name: 'BRANCH', value: 'main')]
+                    build job: 'ecs-far-champ', parameters: [string(name: 'kranthi', value: 'main')]
                 }
             }
         }
