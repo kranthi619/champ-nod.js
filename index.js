@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
         }
         h1 {
           color: #333;
-          font-size: 3em;
+          font-size: 3.5em; /* Increase font size for h1 */
           text-shadow: 2px 2px 4px #000000;
         }
         p {
@@ -43,8 +43,8 @@ app.get("/", (req, res) => {
     </head>
     <body>
       <h1>Welcome to My Website</h1>
-      <p class="animated-text">Hello, this is <strong>Kranthi_Champ</strong>!</p>
-      <p>Let's keep learning, champs!</p>
+      <p class="animated-text">Hello, this is <strong><span style="font-weight: bold; font-size: 1.7em;">Kranthi_Champ</span></strong>!</p>
+      <p>Lets learn together team ALL THE VERY BEST TEAM <img src="https://emojicdn.elk.sh/🤝" alt="handshake" style="width: 30px; vertical-align: middle;"> and make my name kranthi_champ bolder and a little larger than now.</p>
     </body>
     </html>
   `);
