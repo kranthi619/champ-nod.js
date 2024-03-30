@@ -6,7 +6,7 @@ pipeline {
         ECR_REPOSITORY = '996034040698.dkr.ecr.ap-south-1.amazonaws.com/kranthi-repo'
         REGION = 'ap-south-1'
         ECS_CLUSTER = 'champ-far'
-        ECS_SERVICE = 'champ_service'
+        ECS_SERVICE = 'champ-ecs-far'
         ACCOUNT_NO = '996034040698'
         JOB_NAME = 'ecs-far-champ'
         WORKSPACE = '/var/lib/jenkins/jobs/ecs-far-champ'
