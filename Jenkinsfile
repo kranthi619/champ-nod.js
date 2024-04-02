@@ -5,12 +5,12 @@ pipeline {
         ECR_REPOSITORY_NAME = 'kranthi-repo'
         ECR_REPOSITORY = '996034040698.dkr.ecr.ap-south-1.amazonaws.com/kranthi-repo'
         REGION = 'ap-south-1'
-        ECS_CLUSTER = 'champ-far'
-        ECS_SERVICE = 'ecs-far-svc'
+        ECS_CLUSTER = 'ecs-ec2'
+        ECS_SERVICE = 'ecs-srvc'
         ACCOUNT_NO = '996034040698'
-        JOB_NAME = 'ecs-far-champ'
-        WORKSPACE = '/var/lib/jenkins/jobs/ecs-far-champ'
-        ECS_TIMEOUT = '600'
+        JOB_NAME = 'ecs-ec2-champ'
+        WORKSPACE = '/var/lib/jenkins/jobs/ecs-ec2-champ'
+        ECS_TIMEOUT = '800'
     }
     stages {
         stage('Clone Git Repo') {
@@ -19,7 +19,7 @@ pipeline {
                     checkout([
                         $class: 'GitSCM',
                         branches: [[name: "main"]],
-                        userRemoteConfigs: [[url: 'https://github.com/champ2024/nod.js.git', credentialsId: 'githubcred']]
+                        userRemoteConfigs: [[url: 'https://github.com/kranthi619/champ-nod.js.git', credentialsId: 'githubcred']]
                     ])
                 }
             }
