@@ -3,10 +3,9 @@ version: 0.2
 phases:
   install:
     commands:
-      # Install Docker if it's not pre-installed (but CodeBuild typically has Docker installed by default)
       - echo Installing Docker...
       - yum install -y docker
-      - docker --version  # Check if Docker is available
+      - docker --version
 
   pre_build:
     commands:
