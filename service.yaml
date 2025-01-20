@@ -10,9 +10,9 @@ metadata:
   name: cicd-demo
 spec:
   selector:
-    app: cicd-demo
+    app: eks-ecr-demo
   type: NodePort
   ports:
-   -  protocol: TCP
+    - protocol: TCP
       port: 80
       targetPort: 5000
